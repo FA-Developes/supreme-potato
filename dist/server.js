@@ -30,4 +30,4 @@ app
     .get('/users', function (req, res) { return user_1.default.find().then(function (a) { return res.json(a); }); })
     .use('/auth', auth_1.default)
     .get('/', function (req, res) { return res.send("Hello"); });
-app.listen(80, function () { return console.log("server started"); });
+app.listen(process.env.PORT || 8080, function () { return console.log("server started"); });
