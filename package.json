@@ -4,8 +4,8 @@
   "description": "text adventure game",
   "main": "server.ts",
   "scripts": {
-    "start": "tsc && nodemon dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "tsc && nodemon dist/server.js",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
