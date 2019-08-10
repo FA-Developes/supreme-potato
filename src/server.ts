@@ -39,6 +39,7 @@ mongoose
 app
 .get('/users', (req, res) => UserModel.find().then((a) => res.json(a)))
 .use('/auth', auth)
+.get('/', (req,res) => res.send("Hello"));
 
 
-app.listen(8080, () => console.log("server started"))
+app.listen(80, () => console.log("server started"))
