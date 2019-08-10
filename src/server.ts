@@ -42,4 +42,4 @@ app
 .get('/', (req,res) => res.send("Hello"));
 
 
-app.listen(80, () => console.log("server started"))
+app.listen(process.env.PORT || 8080, () => console.log("server started"))
